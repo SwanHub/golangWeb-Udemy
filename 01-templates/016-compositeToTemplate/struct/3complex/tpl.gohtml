@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Golang HTML test</title>
+</head>
+<body>
+<ul>
+    {{range .}}
+    <li>Hobbies of {{.First}} {{.Last}}</li>
+        {{range .Hobbies}}
+        <li>{{.}}</li>
+        {{end}}
+    {{end}}
+</ul>
+</body>
+</html>
