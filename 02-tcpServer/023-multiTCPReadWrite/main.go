@@ -27,6 +27,8 @@ func main() {
 // I see how it works, though, and am moving on
 // I'm going to move forward speedily through TCP server action
 
+// note that a mux is a router is a server is a multiplexer...
+
 func handle(conn net.Conn) {
 	scanner := bufio.NewScanner(conn)
 	for scanner.Scan() {
